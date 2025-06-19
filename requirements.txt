@@ -1,7 +1,6 @@
-
 ```text
-matplotlib
-numpy
-pandas
-sklearn
-statsmodels
+pandas==2.2.1
+numpy==1.26.4
+matplotlib==3.8.4
+scikit-learn==1.4.2
+statsmodels==0.14.1
