@@ -1,8 +1,9 @@
-# Prédiction de l'Absentéisme
+# Prédiction de l'Absentéisme des Employés
 
-Ce projet vise à analyser, préparer, prédire et visualiser l'absentéisme des employés à partir d'un jeu de données RH, en utilisant des techniques de régression logistique et de traitement des données.
+Ce projet a pour objectif d’analyser et de prédire l’absentéisme des employés à l’aide d’un modèle de régression logistique. Il vise à identifier les profils à risque élevé et à fournir des outils d’aide à la décision pour les services RH.
 
 ## 📁 Structure du projet
+
 
 absenteisme-prediction/
 ├── data/ # Données CSV utilisées pour l’analyse
@@ -20,19 +21,41 @@ absenteisme-prediction/
 
 ## 🔍 Contenu des notebooks
 
-- **Preprocessing** : Nettoyage, normalisation, transformation des variables (dont le one-hot encoding).
-- **Régression logistique** : Construction et ajustement du modèle prédictif.
-- **Prédictions finales** : Application du modèle, génération des résultats, et export des employés à haut risque.
+- **Preprocessing**  
+  Nettoyage des données, transformation des variables (encodage one-hot), normalisation, et préparation pour le modèle.
 
-## ⚙️ Installation
+- **Régression Logistique**  
+  Construction du modèle prédictif, analyse de la pertinence des variables explicatives, évaluation des performances.
 
-Pour exécuter ce projet, assurez-vous d’avoir Python 3 et installez les dépendances avec :
+- **Prédictions**  
+  Application du modèle sur de nouvelles données, génération des prédictions et identification des employés à haut risque.
+
+## 🧪 Technologies & Méthodes
+
+- Python 3
+- Pandas et NumPy pour la manipulation des données
+- Scikit-learn et StatsModels pour la modélisation
+- Matplotlib pour les visualisations
+- Régression logistique
+- Encodage des variables catégorielles (One-hot encoding)
+- Standardisation personnalisée
+
+## ⚙️ Exécution du projet
+
+1. Cloner le dépôt :
+   ```bash
+   git clone https://github.com/mohammed-ouahhabi/absenteisme-prediction.git
+   cd absenteisme-prediction
 
 ```bash
 pip install -r requirements.txt
 
-🧠 Objectif
-Ce projet est conçu dans le cadre d'une étude pratique visant à prédire le comportement d’absentéisme en entreprise et identifier les profils à risque.
+🎯 Objectif
+Construire un modèle prédictif fiable permettant d’évaluer le risque d’absentéisme des employés et d’aider les entreprises à anticiper et gérer ce phénomène.
 
-✨ Résultat attendu
-Des fichiers CSV contenant les prédictions, ainsi qu’un rapport des employés présentant un risque élevé d’absentéisme.
+📊 Résultats attendus
+-Données nettoyées et traitées
+
+-Fichiers CSV contenant les prédictions
+
+-Liste des employés identifiés comme à haut risque
